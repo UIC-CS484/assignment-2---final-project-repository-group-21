@@ -10,6 +10,13 @@ const passport = require('passport');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+var loginRouter = require('./routes/login');
+var createAccountRouter = require('./routes/createAccount');
+var submitRouter = require('./routes/submit');
+var loginSubmitRouter = require('./routes/loginSubmit');
+var dashboardRouter = require('./routes/dashboard.js');
+
+
 var app = express();
 
 //passport config
@@ -48,6 +55,13 @@ app.use(passport.session());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+app.use('/', loginRouter);
+app.use('/createAccount', createAccountRouter);
+app.use('/submit', submitRouter);
+app.use('/loginSubmit', loginSubmitRouter);
+app.use('/dashboard', dashboardRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
