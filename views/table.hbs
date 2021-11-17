@@ -18,7 +18,7 @@
                 function (e) {
                     $.each(e, function (i, v) {
                         //data.addRows([v.case_number]);
-                        apiData.push([v.case_number, v.primary_type, v.ward, v.description, v.arrest, v.year]);
+                        apiData.push([v.case_number, v.primary_type, v.description, v.ward, v.district, v.arrest, v.year]);
 
                     }); // end of the callback function and parameter list for $.each
                 }); //  end of the callback function and parameter list for $.get 
@@ -30,8 +30,9 @@
             var data = new google.visualization.DataTable();
             data.addColumn('string', 'Case Number');
             data.addColumn('string', 'Primary Type');
-            data.addColumn('string', 'Ward');
             data.addColumn('string', 'Description');
+            data.addColumn('string', 'Ward');
+            data.addColumn('string', 'District');
             data.addColumn('boolean', 'Arrest');
             data.addColumn('string', 'Year');
 
@@ -76,6 +77,8 @@
                     <li><a href="/login">Login</a></li>
                 </ul>
             </nav>
+    <div><p>.  </p> 
+    </div>
     
     <div id="table_div"></div>
     
