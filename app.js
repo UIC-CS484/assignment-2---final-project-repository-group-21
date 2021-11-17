@@ -15,6 +15,7 @@ var createAccountRouter = require('./routes/createAccount');
 var submitRouter = require('./routes/submit');
 var loginSubmitRouter = require('./routes/loginSubmit');
 var dashboardRouter = require('./routes/dashboard.js');
+var tableRouter = require('./routes/table.js');
 
 
 var app = express();
@@ -61,6 +62,7 @@ app.use('/createAccount', createAccountRouter);
 app.use('/submit', submitRouter);
 app.use('/loginSubmit', loginSubmitRouter);
 app.use('/dashboard', dashboardRouter);
+app.use('/table', tableRouter);
 
 
 // catch 404 and forward to error handler

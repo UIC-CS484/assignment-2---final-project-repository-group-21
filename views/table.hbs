@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        
+        var apiData = [];
+
+            $.get("https://data.cityofchicago.org/resource/crimes.json",
+                function (e) {
+                    $.each(e, function (i, v) {
+                        //data.addRows([v.case_number]);
+                        apiData.push([v.case_number, v.primary_type, v.ward, v.description, v.arrest, v.year]);
+
+                    }); // end of the callback function and parameter list for $.each
+                }); //  end of the callback function and parameter list for $.get 
+        
+        google.charts.load('current', { 'packages': ['table'] });
+        google.charts.setOnLoadCallback(drawTable);
+
+        function drawTable() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Case Number');
+            data.addColumn('string', 'Primary Type');
+            data.addColumn('string', 'Ward');
+            data.addColumn('string', 'Description');
+            data.addColumn('boolean', 'Arrest');
+            data.addColumn('string', 'Year');
+
+            
+            //console.log([tempData]);
+            data.addRows(apiData);
+            
+
+            var table = new google.visualization.Table(document.getElementById('table_div'));
+
+            table.draw(data, { showRowNumber: false, width: '100%', height: '100%' });
+        }
+    </script>
+</head>
+
+<body>
+    <div id="table_div"></div>
+</body>
+
+</html>
