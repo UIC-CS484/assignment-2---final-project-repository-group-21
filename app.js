@@ -17,6 +17,15 @@ var loginSubmitRouter = require('./routes/loginSubmit');
 var dashboardRouter = require('./routes/dashboard.js');
 var tableRouter = require('./routes/table.js');
 
+const sumModule = require('./sum.js');
+
+var total = sumModule.sum(2, 3);
+
+
+test('adds 1 + 2 to equal 3', () => {
+    expect(sum.sum(1, 2)).toBe(3);
+});
+
 
 var app = express();
 

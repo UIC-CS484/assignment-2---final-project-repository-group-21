@@ -19,5 +19,11 @@
         "passport": "^0.5.0",
         "passport-local": "^1.0.0",
         "sqlite3": "^5.0.2"
-    }
+    },
+    "devDependencies": {
+        "jest": "^27.4.3"
+    },
+
+    "test": "jest"
+
 }
