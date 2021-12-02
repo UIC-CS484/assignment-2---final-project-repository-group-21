@@ -1,4 +1,4 @@
-# Chidata
+# CHIdata
 Hosted website [link](https://chidata.herokuapp.com/)
 
 This application will help end users understand their communities and city better. The application is connected to the Chicago Data Portal to get data about Chicago Police crime data as well as have connections to city employee data.
@@ -7,7 +7,7 @@ This application will help end users understand their communities and city bette
 
 
 
-### Assignment 3:
+#### Assignment 3:
 Requirement 1:
 - Database for the users to sign in and out. Just logs username, password, and lastlogon time.
 ![image](https://user-images.githubusercontent.com/54635639/142281737-1d5b0bad-c4e2-4817-abdd-c148c6b2f6b9.png)
