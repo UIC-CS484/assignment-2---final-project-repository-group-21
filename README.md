@@ -1,7 +1,7 @@
 # Chidata
 Hosted website [link](https://chidata.herokuapp.com/)
 
-
+This application will help end users understand their communities and city better. The application is connected to the Chicago Data Portal to get data about Chicago Police crime data as well as have connections to city employee data.
 
 
 
