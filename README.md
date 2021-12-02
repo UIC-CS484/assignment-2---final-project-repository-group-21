@@ -1,4 +1,5 @@
 # CHIdata
+[![Node.js CI](https://github.com/UIC-CS484/assignment-2---final-project-repository-group-21/actions/workflows/node.js.yml/badge.svg)](https://github.com/UIC-CS484/assignment-2---final-project-repository-group-21/actions/workflows/node.js.yml)
 Hosted website [link](https://chidata.herokuapp.com/)
 
 This application will help end users understand their communities and city better. The application is connected to the Chicago Data Portal to get data about Chicago Police crime data as well as have connections to city employee data.
