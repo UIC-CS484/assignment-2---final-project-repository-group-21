@@ -16,6 +16,7 @@ var submitRouter = require('./routes/submit');
 var loginSubmitRouter = require('./routes/loginSubmit');
 var dashboardRouter = require('./routes/dashboard.js');
 var tableRouter = require('./routes/table.js');
+var crimeRouter = require('./routes/crime.js');
 
 const sumModule = require('./sum.js');
 
@@ -67,7 +68,7 @@ app.use('/submit', submitRouter);
 app.use('/loginSubmit', loginSubmitRouter);
 app.use('/dashboard', dashboardRouter);
 app.use('/table', tableRouter);
-
+app.use('/crime', crimeRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
