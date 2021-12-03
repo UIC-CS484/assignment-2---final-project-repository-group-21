@@ -29,11 +29,18 @@ This application will help end users to be informed about their communities. The
 Biruk Yigzaw
 
 
+Future Plans:
+I would like to add the following features and host the site
+- Google Maps intgeration
+- Case lookup
+- Location crime alert
+- Interaction with the data such as charting and downloading the various charts based on user given criteria
 
+***
+***
+//
 
-
-
-#### Assignment 3:
+Assignment 3:
 Requirement 1:
 - Database for the users to sign in and out. Just logs username, password, and lastlogon time.
 ![image](https://user-images.githubusercontent.com/54635639/142281737-1d5b0bad-c4e2-4817-abdd-c148c6b2f6b9.png)
